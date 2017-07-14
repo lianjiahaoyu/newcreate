@@ -2,15 +2,23 @@ body, h1, h2, h3, h4, h5, h6 {
     font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
+ul,li{list-style: none;}
 .home header{
     margin: 0;
 }
 .home .main-cool {
+    width: auto;
     padding-top: 50px;
     padding-bottom: 50px;
     min-height: 1000px;
     text-align: center;
     color: #333;
-    /*background: url(./img/home.jpg) no-repeat center;*/
-
+    background: url(./img/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+@media only screen and (max-width: 767px){
+    .home .main-cool {
+        background: url(./img/bg_s.jpg) no-repeat center;
+        background-size: cover;
+    }
 }
